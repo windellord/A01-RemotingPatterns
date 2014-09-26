@@ -7,7 +7,6 @@ Angabe
 Das Framework für Remoting Patterns finden sie unter dem Thema "Resources"!
 
 Gruppenarbeit: 2 Mitglieder (Server/Client)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Analysieren Sie in einer Gruppe von 2 Leuten die mitgelieferte Implementation der verteilten LeelaApplikation. 
 Identifizieren Sie dabei alle verwendeten Elemente der "Basic Remoting Patterns" und 
@@ -16,7 +15,6 @@ erstellen Sie UML-Klassendiagramme für die Pakete comm, comm.socket, comm.soap,
 Schließen Sie die unfertigen Tests ab, und dokumentieren Sie etwaige Schwierigkeiten.
 
 Was ist zu tun?
-~~~~~~~~~~~~~~~~
 
 UML Klassendiagramm
 Erweitern der Testfälle (mind. einen Testfall erweitern)
