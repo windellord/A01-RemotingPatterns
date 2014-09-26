@@ -1,0 +1,5 @@
+PeerID,PeerAddress
+peer1,socket://192.168.0.201:1234
+peer2,socket://192.168.0.202:1234
+peer3,soap://192.168.0.203/leela
+test,socket://localhost:45445

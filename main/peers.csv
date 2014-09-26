@@ -1,0 +1,12 @@
+PeerID,PeerAddress
+peer1,socket::192.168.0.201:1234
+peer2,socket::192.168.0.202:1234
+peer3,soap::http://192.168.0.203:8080/peer
+testsocket1,socket::localhost:12345
+testsocket2,socket::localhost:12300
+testsoap1,soap::http://localhost:23456/peer
+testsoap2,soap::http://localhost:23400/peer
+test3,socket::localhost:34567
+test3,soap::http://localhost:34568/peer
+test4,socket::localhost:45678
+test4,soap::http://localhost:45679/peer

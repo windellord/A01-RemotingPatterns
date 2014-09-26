@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="meschmobile" name="evs2009.ApplicationTest" tests="1" time="2.507" timestamp="2009-09-24T19:57:35">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler" />
+    <property name="maven.build.srcDir.0" value="src/main/java" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.16/jre/classes" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.file.main-from-maven" value="/home/mike/Desktop/evs2009/main/maven-build.xml" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="ant.file.parent-from-maven" value="/home/mike/Desktop/evs2009/maven-build.xml" />
+    <property name="java.runtime.version" value="1.6.0_16-b01" />
+    <property name="maven.build.resourceDir.0" value="src/main/resources" />
+    <property name="user.name" value="mike" />
+    <property name="maven.build.outputDir" value="target/classes" />
+    <property name="maven.repo.local" value="/home/mike/.m2/repository" />
+    <property name="maven.build.finalName" value="main-1.0-SNAPSHOT" />
+    <property name="maven.build.testDir.0" value="src/test/java" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/amd64" />
+    <property name="maven.reporting.outputDirectory" value="target/site" />
+    <property name="ant.project.name" value="main" />
+    <property name="java.version" value="1.6.0_16" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="ant.file.main" value="/home/mike/Desktop/evs2009/main/build.xml" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/usr/lib/jvm/java-6-sun-1.6.0.16/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/home/mike/Desktop/evs2009/main/build.xml" />
+    <property name="os.version" value="2.6.28-15-generic" />
+    <property name="maven.build.testOutputDir" value="target/test-classes" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="14.2-b01" />
+    <property name="maven.build.dir" value="target" />
+    <property name="maven.test.reports" value="target/test-reports" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="project.build.outputDirectory" value="target/classes" />
+    <property name="user.home" value="/home/mike" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.16/jre/../lib/amd64:/usr/java/packages/lib/amd64:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="maven.settings.offline" value="false" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="maven.settings.interactiveMode" value="true" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="/home/mike/.m2/repository/junit/junit/4.4/junit-4.4.jar:/home/mike/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar:/home/mike/.m2/repository/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.jar:/home/mike/.m2/repository/org/mockito/mockito-all/1.7/mockito-all-1.7.jar:/home/mike/.m2/repository/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar:/home/mike/.m2/repository/org/slf4j/slf4j-log4j12/1.5.6/slf4j-log4j12-1.5.6.jar:/home/mike/Desktop/evs2009/main/target/classes:/home/mike/Desktop/evs2009/main/target/test-classes:/usr/share/ant/lib/junit.jar:/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar" />
+    <property name="ant.version" value="Apache Ant version 1.7.1 compiled on November 10 2008" />
+    <property name="project.build.directory" value="target" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="junit.present" value="true" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="maven.build.testResourceDir.0" value="src/test/resources" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/home/mike/Desktop/evs2009/main" />
+    <property name="line.separator" value="
+" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="." />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="ant.file.parent" value="/home/mike/Desktop/evs2009/build.xml" />
+    <property name="java.specification.version" value="1.6" />
+  </properties>
+  <testcase classname="evs2009.ApplicationTest" name="generalTest" time="2.429" />
+  <system-out><![CDATA[0    [main] INFO  comm.socket.SocketPluginClient  - SPC :: Configuring clientpeer plugin socket to host: localhost port: 12345
+29   [main] INFO  comm.socket.SocketPluginClient  - SPC :: Configuring clientpeer plugin socket to host: localhost port: 12300
+62   [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+74   [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:379
+75   [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:379
+75   [main] DEBUG comm.socket.SocketPluginClient  - Got bytes379
+75   [main] DEBUG comm.socket.SocketPluginClient  - Read is 379
+77   [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+80   [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:452
+81   [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:452
+81   [main] DEBUG comm.socket.SocketPluginClient  - Got bytes452
+81   [main] DEBUG comm.socket.SocketPluginClient  - Read is 452
+83   [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+87   [pool-1-thread-1] DEBUG evs2009.EppCommunication  - MetaData size:256
+87   [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:838
+92   [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:838
+92   [main] DEBUG comm.socket.SocketPluginClient  - Got bytes838
+92   [main] DEBUG comm.socket.SocketPluginClient  - Read is 838
+97   [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+99   [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:510
+100  [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:510
+100  [main] DEBUG comm.socket.SocketPluginClient  - Got bytes510
+100  [main] DEBUG comm.socket.SocketPluginClient  - Read is 510
+103  [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+105  [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:375
+106  [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:375
+106  [main] DEBUG comm.socket.SocketPluginClient  - Got bytes375
+106  [main] DEBUG comm.socket.SocketPluginClient  - Read is 375
+109  [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+110  [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:506
+111  [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:506
+111  [main] DEBUG comm.socket.SocketPluginClient  - Got bytes506
+111  [main] DEBUG comm.socket.SocketPluginClient  - Read is 506
+114  [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+115  [pool-1-thread-1] DEBUG evs2009.EppCommunication  - MetaData size:256
+116  [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:838
+116  [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:838
+116  [main] DEBUG comm.socket.SocketPluginClient  - Got bytes838
+116  [main] DEBUG comm.socket.SocketPluginClient  - Read is 838
+118  [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+140  [pool-1-thread-1] DEBUG evs2009.EppCommunication  - Delete in EPPCommunication called: TestData
+141  [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:377
+145  [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:377
+145  [main] DEBUG comm.socket.SocketPluginClient  - Got bytes377
+145  [main] DEBUG comm.socket.SocketPluginClient  - Read is 377
+147  [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+149  [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:487
+149  [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:487
+149  [main] DEBUG comm.socket.SocketPluginClient  - Got bytes487
+149  [main] DEBUG comm.socket.SocketPluginClient  - Read is 487
+151  [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+153  [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:456
+153  [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:456
+153  [main] DEBUG comm.socket.SocketPluginClient  - Got bytes456
+153  [main] DEBUG comm.socket.SocketPluginClient  - Read is 456
+155  [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+158  [Thread-1] INFO  comm.socket.SocketPluginClient  - SPC :: Configuring clientpeer plugin socket to host: localhost port: 12300
+158  [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:547
+163  [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:547
+163  [main] DEBUG comm.socket.SocketPluginClient  - Got bytes547
+163  [main] DEBUG comm.socket.SocketPluginClient  - Read is 547
+175  [pool-2-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12300
+177  [pool-2-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:379
+177  [Thread-1] INFO  comm.socket.SocketPluginClient  - Client receives bytes:379
+177  [Thread-1] DEBUG comm.socket.SocketPluginClient  - Got bytes379
+177  [Thread-1] DEBUG comm.socket.SocketPluginClient  - Read is 379
+182  [pool-2-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12300
+184  [pool-2-thread-1] DEBUG comm.socket.SocketPluginClient  - CREATE A NEW INSTANCE OF TransferFile ON testsocket2
+185  [pool-2-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:383
+185  [Thread-1] INFO  comm.socket.SocketPluginClient  - Client receives bytes:383
+185  [Thread-1] DEBUG comm.socket.SocketPluginClient  - Got bytes383
+185  [Thread-1] DEBUG comm.socket.SocketPluginClient  - Read is 383
+192  [pool-2-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12300
+194  [pool-2-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:383
+194  [Thread-1] INFO  comm.socket.SocketPluginClient  - Client receives bytes:383
+194  [Thread-1] DEBUG comm.socket.SocketPluginClient  - Got bytes383
+194  [Thread-1] DEBUG comm.socket.SocketPluginClient  - Read is 383
+2166 [pool-2-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12300
+2172 [pool-2-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:379
+2172 [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:379
+2173 [main] DEBUG comm.socket.SocketPluginClient  - Got bytes379
+2173 [main] DEBUG comm.socket.SocketPluginClient  - Read is 379
+2178 [pool-2-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12300
+2185 [pool-2-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:518
+2185 [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:518
+2185 [main] DEBUG comm.socket.SocketPluginClient  - Got bytes518
+2185 [main] DEBUG comm.socket.SocketPluginClient  - Read is 518
+2193 [pool-1-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12345
+2198 [pool-1-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:383
+2199 [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:383
+2199 [main] DEBUG comm.socket.SocketPluginClient  - Got bytes383
+2199 [main] DEBUG comm.socket.SocketPluginClient  - Read is 383
+2204 [pool-2-thread-1] DEBUG comm.socket.SocketPluginServer  - SRV :: Running listener on port 12300
+2209 [pool-2-thread-1] INFO  comm.socket.SocketPluginServer  - Server sends bytes:383
+2209 [main] INFO  comm.socket.SocketPluginClient  - Client receives bytes:383
+2209 [main] DEBUG comm.socket.SocketPluginClient  - Got bytes383
+2210 [main] DEBUG comm.socket.SocketPluginClient  - Read is 383
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="ietf/params/xml/ns/epp_1/|ietf/params/xml/ns/eppcom_1/" kind="src" path="main/java"/>
+	<classpathentry kind="src" path="main/java/ietf/params/xml/ns/epp_1"/>
+	<classpathentry kind="src" path="main/java/ietf/params/xml/ns/eppcom_1"/>
+	<classpathentry kind="src" path="test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/mike/Desktop/javacsv.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

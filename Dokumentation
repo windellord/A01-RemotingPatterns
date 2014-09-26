@@ -1,0 +1,62 @@
+Annahmen:
+
+*) Transfer Request/Execute ist ein Move Befehl
+*) Transfer Request/Execute sind asynchron (Requests werden in einer Queue gespeichert, vom server später abgearbeitet und dann asynchron an den client geschickt)
+*) Transfer Request übersendet einen Token und Namen von File. Server nimmt Request in eine Queue auf.Sollte ein Request von dem selben Requestor da sein, kommt eine Errormessage. Bei TransferExecute schickt der Server dem Client den Token und die Daten (TransferExecute mit gesetztem Attribut op=Execute) zurück.
+Alle anderen Request für dieses File werden gelöscht. Bei einem TransferCancel wird der Request aus der Queue gelöscht. 
+*) Transfer Execute Fehlermeldungen werden mittels Exception gegeben
+*) Jeder Peer hat einen Identifier (und müsste sich bei einem Naming-Service für seinen Protokolle registrieren. Das erfolgt bei uns statisch. Jeder Peer kennt alle anderen Peers)
+*) Der RequestHandler hat eine Zuordnung von Identifiern zu verwendetetem Protokoll/eindeutiger Netzwerkadresse (in csv gespeichert - Identifier,Protokoll1, Protokoll2, ...)
+*) Deadlocks möglich. Locken auf einzelne Resource, dadurch -> lost update, phantom read, dirty read
+*) Lock wird für gesamte Session gehalten wenn einmal genommen
+*) Owner einer Resource ist der Peer bei dem die Resource liegt
+*) Error einer Operation beendet die Session nicht
+*) Explizites beenden einer Session notwendig (kein Timeout vorerst) und damit auch kein automatischer rollback nötig
+
+
+TransactionManager hat eine große Collection mit gelockten Resources.Führt nach Commit die jeweiligen Befehle am Peer aus. Liefert SessionPeer anhand des SessionToken zurück. Bearbeitete Ressourcen sind in der obengenannten Collection dabei. DIRTY_READ für Lesezugriffe. 
+SessionPeer - kommuniziert mit TransaktionManager und nicht direkt mit Peer. Hier läuft concurrent code ab.
+SessionToken - Jeder Session wird beim Login ein Token zugewiesen, dass bei jedem Kommando mitübertragen wird. 
+
+Testfälle:
+Possible Errors:
+Login: Wrong credentials
+Logout: Not logged in before
+Create: Already created
+Read: Not created
+Update: Not created
+Delete: Not created
+Check: Not created
+Transfer Request: Not created
+Transfer Execute: Item already exists, Wrong Token, Internal Error (e.g. no space left)
+All: No authorization
+All: Session not closed -> Rollback
+
+---Login & Logout---
+*) Login -> Logout -> Correct
+*) Login (wrong password or username) -> Error
+*) Logout (not logged in) -> Error
+---Create---
+*) Login -> Create -> Read -> Logout -> Correct
+*) Login -> Create (already exists) -> Error
+---Read---
+*) Login -> Create -> Read -> Logout -> Correct
+*) Login -> Read (doesn't exist) -> Error
+---Update---
+*) Login -> Create -> Read -> Update -> Read -> Logout -> Correct
+*) Login -> Update (doesn't exist) -> Error
+---Delete---
+*) Login -> Create -> Read -> Delete -> Read (should result in Error) -> Logout -> Correct
+*) Login -> Delete (doesn't exist) -> Error
+---Check---
+*) Login -> Create -> Check -> Logout -> Correct
+*) Login -> Check (doesn't exist) -> Error
+---TransferRequest---
+*) Login -> Create -> TransferRequest -> Logout -> Correct
+NEU*) Login -> TransferRequest (already exists for this requestor) -> Error
+*) Login -> TransferRequest (doesn't exist) -> Error
+---TransferExecute---
+*) Login -> TransferExecute -> Read -> Logout
+*) Login -> TransferExecute (Item already exists) -> Error
+*) Login -> TransferExecute (Wrong Token) -> Error
+*) Login -> TransferExecute (Internal Error) -> Error
